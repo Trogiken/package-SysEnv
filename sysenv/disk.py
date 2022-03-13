@@ -6,6 +6,7 @@ from .a import get_size
 class disk:
     @staticmethod
     def list():
+        """List devices"""
         partitions = psutil.disk_partitions()
         devices = []
         for partition in partitions:
@@ -14,6 +15,7 @@ class disk:
 
     @staticmethod
     def list_all():
+        """All partition's information as a list of dictionaries"""
         raw_partitions = psutil.disk_partitions()
         partitions = []
         for partition in raw_partitions:
@@ -33,5 +35,4 @@ class disk:
                                    'free': f'{get_size(usage.free)}'
                                    })
             partitions.append(dict_partition)
-
         return partitions
