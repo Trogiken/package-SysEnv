@@ -15,7 +15,7 @@ setup(
     packages=['sysenv'],
     install_requires=['psutil', 'py-cpuinfo'],
     url='https://github.com/Trogiken/package-SysEnv',
-    download_url='git+https://github.com/Trogiken/package-SysEnv.git',
+    download_url='https://github.com/Trogiken/package-SysEnv.git',
     project_urls={
         "Bug Tracker": "https://github.com/Trogiken/package-SysEnv/issues"
     },
