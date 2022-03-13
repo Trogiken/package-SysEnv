@@ -1,0 +1,21 @@
+from distutils.core import setup
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setup(
+    name='package-SysEnv',
+    version='0.0.1',
+    license='MIT',
+    author='Noah',
+    author_email='noah.blaszak@gmail.com',
+    description='Collect system information and environment variables',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    packages=['sysenv'],
+    install_requires=[],
+    url='https://github.com/Trogiken/package-SysEnv',
+    project_urls={
+        "Bug Tracker": "https://github.com/Trogiken/package-SysEnv/issues"
+    },
+)
