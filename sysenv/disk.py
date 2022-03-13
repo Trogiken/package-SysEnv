@@ -62,7 +62,7 @@ class disk:
         write_results = disk.__write_test(location, 1024 * write_block_kb, wr_blocks)
         read_results = disk.__read_test(location, read_block_b, rd_blocks)
         os.remove(f"{location}\\test00001x.txt")
-        return {'read': f'{(write_mb / sum(read_results)) / 150:.2f}',  # "/ 150" sketchy speed correction
+        return {'read': f'{(write_mb / sum(read_results)):.2f}',
                 'write': f'{write_mb / sum(write_results):.2f}',
                 'max_read': f'{read_block_b / (1024 * 1024 * min(read_results)):.2f}',
                 'min_read': f'{read_block_b / (1024 * 1024 * max(read_results)):.2f}',
