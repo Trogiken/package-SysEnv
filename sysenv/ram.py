@@ -11,7 +11,7 @@ class ram:
         return get_size(svmem.total)
 
     @staticmethod
-    def open():
+    def free():
         """Available memory in GB format"""
         return get_size(svmem.available)
 
@@ -21,6 +21,6 @@ class ram:
         return get_size(svmem.used)
 
     @staticmethod
-    def perc_used():
+    def used_perc():
         """Used memory in percentage format"""
         return svmem.percent
