@@ -54,6 +54,14 @@ class disk:
 
     @staticmethod
     def speed(location=f"{os.getcwd()}", write_mb=128, write_block_kb=1024, read_block_b=512):
+        """
+        Get disk speed in MB format
+        :param location:
+        :param write_mb:
+        :param write_block_kb:
+        :param read_block_b:
+        :return: Dictionary
+        """
         write_mb = write_mb
         write_block_kb = write_block_kb
         read_block_b = read_block_b
