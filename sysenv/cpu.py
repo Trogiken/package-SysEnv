@@ -35,7 +35,7 @@ class cpu:
 
     @staticmethod
     def used_cores():
-        """Percentage of each core's usage"""
+        """Percentage of each core's usage (Takes 1 second to complete)"""
         cores_usage = {}
         for number, perc in enumerate(psutil.cpu_percent(percpu=True, interval=1)):
             number += 1
