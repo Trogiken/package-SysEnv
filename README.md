@@ -1,4 +1,4 @@
-# package-SysEnv
+# SysEnv
 Collect system information and environment variables
 
 ### Pip Install
