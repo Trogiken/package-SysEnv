@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name='package-SysEnv',
-    version='0.0.5',
+    name='sysenv',
+    version='0.0.1',
     license='MIT',
     author='Noah',
     author_email='noah.blaszak@gmail.com',
