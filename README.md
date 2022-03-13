@@ -25,5 +25,7 @@ Collect system information and environment variables
   - Avaialble
   - In Use
 
-- DISK [WORKING PROGRESS]
+- DISK
   - List partitions
+  - Partition Info [File System, OPTS, Max File Length, Max Path Length, Size, Usage in GB and %, Free Space]
+  - Read and Write Speed Test
