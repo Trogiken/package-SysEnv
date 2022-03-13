@@ -18,4 +18,5 @@ setup(
     project_urls={
         "Bug Tracker": "https://github.com/Trogiken/package-SysEnv/issues"
     },
+    python_requires='>3.8'
 )
