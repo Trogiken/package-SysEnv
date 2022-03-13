@@ -19,7 +19,7 @@ class system:
     @staticmethod
     def version():
         """OS Version"""
-        return platform.version
+        return platform.version()
 
     @staticmethod
     def arch():
@@ -36,9 +36,10 @@ class system:
         """v4 address"""
         return socket.gethostbyname(socket.gethostname())
 
-    def ipv6(self):
+    @staticmethod
+    def ipv6():
         """v6 address"""
-        result = socket.getaddrinfo(self.host(), 0, socket.AF_INET6)
+        result = socket.getaddrinfo(system.host(), 0, socket.AF_INET6)
         return result[0][4][0]
 
     @staticmethod

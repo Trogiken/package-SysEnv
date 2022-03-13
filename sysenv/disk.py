@@ -1,4 +1,5 @@
 import psutil
+#  TODO disk.speed(partitionName)
 
 
 class disk:
@@ -13,8 +14,6 @@ class disk:
     @staticmethod
     def list_all():  # TODO (Line 97 of test32) Add [size, used, free, percentage] to each partition
         partitions = psutil.disk_partitions()
-        print(partitions)
-        print()
         for partition in partitions:
             try:
                 partition_usage = psutil.disk_usage(partition.mountpoint)
