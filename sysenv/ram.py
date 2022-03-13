@@ -1,5 +1,5 @@
 import psutil
-from a import get_size
+from .a import get_size
 
 svmem = psutil.virtual_memory()
 
