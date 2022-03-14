@@ -39,7 +39,7 @@ class system:
     @staticmethod
     def ipv6():
         """v6 address"""
-        result = socket.getaddrinfo(system.host(), 0, socket.AF_INET6)
+        result = socket.getaddrinfo(socket.gethostname(), 0, socket.AF_INET6)
         return result[0][4][0]
 
     @staticmethod
