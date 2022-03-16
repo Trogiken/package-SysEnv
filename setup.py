@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='sysenv',
-    version='0.2.8',
+    version='0.2.9',
     license='MIT',
     author='Noah',
     author_email='noah.blaszak@gmail.com',
