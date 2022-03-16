@@ -118,6 +118,6 @@ class disk:
             for partition in partitions:
                 if partition['device'] == device:
                     return partition
-            return False  # If device name isn't found
+            return None  # If device name isn't found
 
         return partitions
