@@ -88,8 +88,12 @@ class disk:
         return devices
 
     @staticmethod
-    def list_all():
-        """All partition's information as a list of dictionaries"""
+    def list_all(device=None):
+        """
+        List partition information
+        :param device:
+        :return: dict
+        """
         raw_partitions = psutil.disk_partitions()
         partitions = []
         for partition in raw_partitions:
@@ -109,4 +113,11 @@ class disk:
                                    'free': f'{get_size(usage.free)}'
                                    })
             partitions.append(dict_partition)
+
+        if device:
+            for partition in partitions:
+                if partition['device'] == device:
+                    return partition
+            return False  # If device name isn't found
+
         return partitions
