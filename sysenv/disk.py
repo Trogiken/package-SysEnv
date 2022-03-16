@@ -34,7 +34,7 @@ class disk:
     #  https://github.com/thodnev/MonkeyTest
     @staticmethod
     def __read_test(location, block_size, blocks_count):
-        f = os.open(f'{location}\\test00001x.txt', os.O_RDONLY, 0o777)  # low-level I/O
+        f = os.open(f'{location}\\test00001x.txt', os.O_RDONLY, 0o777)
         # generate random read positions
         offsets = list(range(0, blocks_count * block_size, block_size))
         shuffle(offsets)
@@ -118,6 +118,6 @@ class disk:
             for partition in partitions:
                 if partition['device'] == device:
                     return partition
-            return None  # If device name isn't found
+            return None
 
         return partitions
